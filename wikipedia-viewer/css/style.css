@@ -1,0 +1,41 @@
+body{
+  background-color: #003d99;
+  color: #e6ffff;
+}
+#signature{
+  padding: 2em;
+}
+h1{
+  padding: 1em;
+}
+a, a:hover, a:visited, a:link, a:active{
+  font-size: 1.5em;
+  color: #e6ffff;
+  text-decoration: none;
+}
+a:hover{
+    opacity: 0.5;
+}
+input{
+  color: black;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.panel{
+  color: black;
+  margin: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  transition: margin 0.5s ease-in-out;
+  -webkit-transition: margin 0.5s ease-in-out;
+  -moz-transition: margin 0.5s ease-in-out;
+}
+.panel:hover{
+  margin: 15px;
+  transition: margin 0.5s ease-in-out;
+  -webkit-transition: margin 0.5s ease-in-out;
+  -moz-transition: margin 0.5s ease-in-out;
+}

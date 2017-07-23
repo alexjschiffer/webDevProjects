@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors</title>
+  		<!-- The below 3 meta tags *must* come first in the head -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Import latest minified jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/5af2dc9aae.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script|Rochester" rel="stylesheet">
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <!-- Dragon Slaying Game -->
+  <div class='row' id="dragon">
+    <hr/>
+    <div class="col-md-8 col-md-offset-2 text-center">
+      <h1 class="text-primary">Slay The Dragon</h1>
+      <div class="row">
+        <div class='col-xs-12'>
+      <!--HTML for user interface-->
+      <button class='btn btn-primary' id='newChar'>Create New Character</button>
+      <button class='btn btn-primary' id='attack'>Attack</button>
+      <!-- Display result of fight -->
+      <div class='row'>
+        <div class='col-md-12'>
+          <h3 class='alert alert-warning' id='result'>Get Ready to Fight!</h3>
+        </div>
+      </div>
+      <!-- Area for health of player and dragon -->
+      <div class='row'>
+        <!-- Column for Player -->
+        <div class='col-md-6 alert alert-info'>
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" style="width: 100%">
+              <span class="sr-only"></span>
+            </div>
+          </div>
+          <h2>Dragon Slayer</h2>
+          <div class='row'>
+            <div class='col-md-3'>
+              <h3>Health:</h3>
+            </div>
+            <div class='col-md-3'>
+              <h3 id='playerHealth'></h3>
+            </div>
+            <div class='col-md-3'>
+              <h3 id='dDamage' style='color:red;'></h3>
+            </div>
+          </div>
+        </div>
+        <!-- Column for Dragon NPC -->
+        <div class='col-md-6 alert alert-info'>
+          <div class="progress">
+            <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 100%">
+              <span class="sr-only"></span>
+            </div>
+          </div>
+          <h2>Dragon</h2>
+          <div class='row'>
+            <div class='col-md-3'>
+              <h3>Health:</h3>
+            </div>
+            <div class='col-md-3'>
+              <h3 id='dragonHealth'></h3>
+            </div>
+            <div class='col-md-3'>
+              <h3 id='pDamage' style='color:red;'></h3>
+            </div>
+          </div>
+          <!-- Hidden paragraphs used only for storing health max -->
+          <p class='donot' id='pHealthmax'></p>
+          <p class='donot' id='dHealthmax'></p>
+          <style>
+            .donot {
+              visibility: hidden;
+              display: none;
+            }
+          </style>
+          <!-- Script for dragon game -->
+          <script type='text/javascript' src='javascript/dragon.js'></script>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+    <script src="dragon.js"></script>
+
+</body>
+</html>

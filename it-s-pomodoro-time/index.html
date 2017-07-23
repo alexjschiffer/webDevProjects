@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>It's Pomodoro Time!</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<script src="https://use.fontawesome.com/5af2dc9aae.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col xs-12 text-center">
+        <h1 id="title">It's Pomodoro Time!</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4 text-center">
+        <h1>Break Length</h1>
+        <div class="test">
+          <button class="btn" id="bkdec">-1</button>
+          <h2 id="bktime">5</h2>
+          <button class="btn" id="bkinc">+1</button>
+        </div>
+      </div>
+      <div class="col-xs-4 text-center" id="bl">
+        <h2 id="stat">Get to Work!</h2>
+        <div class="test">
+          <h1 id="min"></h1>
+          <h1 id="timer"></h1>
+        </div>
+      </div>
+      <div class="col-xs-4 text-center">
+        <h1>Session Length</h1>
+        <div class="test">
+          <button class="btn" id="sesdec5">-5</button>
+          <button class="btn" id="sesdec">-1</button>
+          <h2 id="sestime"></h2>
+          <button class="btn" id="sesinc">+1</button>
+          <button class="btn" id="sesinc5">+5</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <button class="btn" id="start">Start</button>
+        <button class="btn" id="stop">Stop</button>
+        <button class="btn" id="reset">Reset</button>
+      </div>
+    </div>
+    <div class="modal" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close closeModal">&times;</button>
+            <h4 class="modal-title">Timer Finished!</h4>
+          </div>
+          <div class="modal-body stopA text-center">
+            <button class="btn btn-default" id="stopSound">Stop Alarm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>

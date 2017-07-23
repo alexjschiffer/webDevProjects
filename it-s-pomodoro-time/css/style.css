@@ -1,0 +1,44 @@
+body{
+background: #222530;
+}
+h1{
+  color: white;
+  padding-top: 1em;
+}
+#stat{
+  color: #338855;
+  margin-bottom: 0;
+}
+#sestime, #bktime{
+  color: #338855;
+  font-size: 2.5em;
+  margin-top: 0;
+}
+.test {
+    display: flex; 
+  justify-content: space-between;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+#title {
+  font-size: 3em;
+  font-family: sans-serif;
+  text-shadow: 2px 1px 1px #000;
+}
+#bl {
+  border: solid 3px #338855;
+  border-radius: 2em;
+  margin: 2em auto;
+}
+.btn{
+  color: white;
+  background: transparent;
+  font-size: 2em;
+  padding-top: 0;
+}
+.btn:hover{
+  color: #338855;
+}
+.stopA{
+  background: #222530;
+}

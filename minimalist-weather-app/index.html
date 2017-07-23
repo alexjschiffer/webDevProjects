@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Minimalist Weather App</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<meta name="viewport" content="width=device-width>
+
+<script src="https://use.fontawesome.com/5af2dc9aae.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Fredericka+the+Great" rel="stylesheet">
+
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h1 class="text-success">Minimalist Weather App</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h3 id="location"></h3>
+        <h3 class="toggle" id="tempf"></h3>
+        <h3 class="toggle" id="tempc" style="display: none"></h3>
+        <h3 id="humidity"></h3>
+        <h3 id="icon"></h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <p id="sunrise">Sunrise: </p>
+        <p id="sunset">Sunset: </p>
+      </div>
+    </div>
+    <div class="row" >
+      <div class="col-xs-6 text-right" id="searchAlign">
+        
+              <input type="text" id="zip" placeholder="Zipcode"><span><i class="fa fa-map-marker" aria-hidden="true"></i>
+</span></input>
+      </div>
+      <div class="col-xs-6 text-left">
+        <button class="btn btn-success" id="getWeather">Update Weather</button>
+                <button class="btn btn-success" id="alter">F/C</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <p id="signature">Created by Alex Schiffer</p>
+      </div>
+    </div>
+  </div>
+</body>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>

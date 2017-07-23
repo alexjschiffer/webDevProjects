@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors</title>
+  		<!-- The below 3 meta tags *must* come first in the head -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Import latest minified jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/5af2dc9aae.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script|Rochester" rel="stylesheet">
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <!-- Enzyme digest simulator -->
+  <div class="row" id="digest">
+    <div class="col-md-8 col-md-offset-2 text-center">
+      <h1 class="text-primary">In-Silico Restriction Enzyme Digest</h1>
+      <div class="row">
+        <!-- Enzyme selection boxes -->
+        <div class='col-xs-4 text-left'>
+          <h3>Select Enzymes for Digestion</h3>
+          <input type="checkbox" id='ecoribox'><label> EcoRI</label><br>
+          <input type="checkbox" id='hindiiibox'><label> HindIII</label><br>
+          <input type="checkbox" id='ncoibox'><label> NcoI</label><br>
+          <input type="checkbox" id='notibox'><label> NotI</label><br>
+          <input type="checkbox" id='pstibox'><label> PstI</label><br>
+        </div>
+        <!-- DNA sequence input form -->
+        <div class='col-xs-8 text-left'>
+          <h3>Input DNA Sequence for Digestion</h3>
+          <p>Please note that all sequences are currently treated as linear. Support for plasmid digestion will be added later.
+          </p>
+          <div class='row'>
+            <div class='col-md-7'>
+              <input class='form-control' type="text" id="input">
+            </div>
+            <div class='col-md-2'>
+              <button class='btn btn-primary' id='submitdna'>Submit</button>
+            </div>
+          </div>
+        </div>
+        <!-- Results of digest -->
+        <div class='row'>
+          <div class='col-xs-12 text-left'>
+            <h3>Virtual Digest Results</h3>
+            <table>
+              <tr>
+                <td>
+                  <p>Sequence Submitted:</p>
+                </td>
+                <td>
+                  <p id='sequence'></p>
+                </td>
+              </tr>
+              <tr>
+                <td>Sequence Length:</td>
+                <td>
+                  <p id='length'></p>
+                </td>
+              </tr>
+              <tr>
+                <td>GC Content:</td>
+                <td id='gc'></td>
+              </tr>
+              <tr>
+                <td>Number of Bases:</td>
+                <td id='base'></td>
+              </tr>
+              <tr id='ecorow' style='display:none'>
+                <td>EcoRI:</td>
+                <td id='eco'></td>
+              </tr>
+              <tr id='hindrow' style='display:none'>
+                <td>HindIII:</td>
+                <td id='hind'></td>
+              </tr>
+              <tr id='ncorow' style='display:none'>
+                <td>NcoI:</td>
+                <td id='nco'></td>
+              </tr>
+              <tr id='notrow' style='display:none'>
+                <td>NotI:</td>
+                <td id='not'></td>
+              </tr>
+              <tr id='pstrow' style='display:none'>
+                <td>PstI:</td>
+                <td id='pst'></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <script type='text/javascript' src='javascript/digest.js'></script>
+      </div>
+    </div>
+  </div>
+    <script src="digest.js"></script>
+
+</body>
+</html>

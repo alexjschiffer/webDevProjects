@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors</title>
+  		<!-- The below 3 meta tags *must* come first in the head -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Import latest minified jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/5af2dc9aae.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script|Rochester" rel="stylesheet">
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <!-- Rock Paper Scissors Game in pane -->
+  <div class='row' id="rock">
+    <hr/>
+    <div class="col-md-8 col-md-offset-2 text-center">
+      <h1 class="text-primary">Rock Paper Scissors</h1>
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Welcome to Rock, Paper, Scissors.</h1>
+          <p>The game is simple. Click "Play!" and enter your choice in the box. The computer always chooses at random. Good luck and have fun!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class='col-xs-12'>
+          <button class="btn btn-primary btn-lg col-md-2" href="#" role="button" onclick='myFunction()'>Play!</button>
+        </div>
+      </div>
+      <!-- Rock Paper Scissors Results -->
+        <div class='row'>
+        <div class='col-md-3'></div>
+        <div class='col-md-6'>
+          <table class='table'>
+            <thead>
+              <tr>
+                <td>
+                  <h3>User Choice</h3></td>
+                <td>
+                  <h3>Computer Choice</h3></td>
+                <td>
+                  <h3>Result</h3></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p id="userChoice"></p>
+                </td>
+                <td>
+                  <p id="computerChoice"></p>
+                </td>
+                <td>
+                  <p id="comparing"></p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <script type='text/javascript' src=javascript/rockpaperscissors.js></script>
+    </div>
+  </div>
+
+
+    <script src="rockpaperscissors.js"></script>
+
+</body>
+</html>

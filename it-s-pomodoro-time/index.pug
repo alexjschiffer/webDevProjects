@@ -1,0 +1,38 @@
+body
+  div.container-fluid
+    div.row
+      div.col.xs-12.text-center
+        h1#title It's Pomodoro Time!
+    div.row
+      div.col-xs-4.text-center
+        h1 Break Length
+        div.test
+          button.btn#bkdec -1
+          h2#bktime 5
+          button.btn#bkinc +1
+      div.col-xs-4.text-center#bl
+        h2#stat Get to Work!
+        div.test
+          h1#min
+          h1#timer
+      div.col-xs-4.text-center
+        h1 Session Length
+        div.test
+          button.btn#sesdec5 -5
+          button.btn#sesdec -1
+          h2#sestime
+          button.btn#sesinc +1
+          button.btn#sesinc5 +5
+    div.row
+      div.col-xs-12.text-center
+        button.btn#start Start
+        button.btn#stop Stop
+        button.btn#reset Reset
+    div.modal#myModal(role='dialog')
+      div.modal-dialog
+        div.modal-content
+          div.modal-header
+            button.close.closeModal &times;
+            h4.modal-title Timer Finished!
+          div.modal-body.stopA.text-center
+            button.btn.btn-default#stopSound Stop Alarm
